@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package gonas.v1alpha1;
+
+service DeviceService {
+  rpc GetHostInfo(GetHostInfoRequest) returns (GetHostInfoResponse) {}
+}
+
+message GetHostInfoRequest {}
+
+message GetHostInfoResponse {
+    string host_name = 1;
+    int64 up_time = 2;
+    string os = 3;
+    string platform = 4;
+    string platform_family = 5;
+    string platform_version = 6;
+    string kernel_version = 7;
+    string kernel_arch = 8;
+}
