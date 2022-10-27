@@ -9,9 +9,6 @@ on:
   pull_request:
   workflow_dispatch:
 
-permissions:
-  contents: read
-
 jobs:
   dependency-review:
     runs-on: ubuntu-latest
