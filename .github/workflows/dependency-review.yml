@@ -26,7 +26,7 @@ jobs:
         uses: actions/go-dependency-submission@v1
         with:
             go-mod-path: go.mod
-            go-build-target: gcmd/app/main.go
+            go-build-target: cmd/app/main.go
       - name: 'Dependency Review'
         uses: actions/dependency-review-action@v2
         with:
